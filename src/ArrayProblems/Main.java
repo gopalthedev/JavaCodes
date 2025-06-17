@@ -5,12 +5,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {1,1,1,2};
-        int k = 2;
-
-
-       CountSubArraySumEqualsK cs = new CountSubArraySumEqualsK();
-        System.out.println(cs.subarraySum(nums, k));
+       ThreeSum threeSum = new ThreeSum();
+        int[] nums = {-1,0,1,2,-1,-4};
+       threeSum.triplets(nums).forEach(System.out::println);
 
     }
 }
