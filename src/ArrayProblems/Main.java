@@ -5,9 +5,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-       ThreeSum threeSum = new ThreeSum();
-        int[] nums = {-1,0,1,2,-1,-4};
-       threeSum.triplets(nums).forEach(System.out::println);
+        int[] nums = {-31, -48, -90, 54, 20, 95, 6, -86, 22};
+       LargestSubarrayWithZeroSum lsa = new LargestSubarrayWithZeroSum();
+        System.out.println(lsa.maxLength(nums));
+
 
     }
 }
