@@ -1,11 +1,19 @@
 import BinarySearch.*;
 
+import java.io.FileDescriptor;
+import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) {
-        PainterPartition pp  = new PainterPartition();
-        int[] nums = {10,20,30,40};
-        int k = 2;
-        System.out.println(pp.painterPartition(nums, k));
+        int[][] mat = {
+                {10},
+                {21},
+                {7}
+        };
+
+        FindPeakGrid findPeakGrid = new FindPeakGrid();
+        int[] ans = findPeakGrid.findPeakGrid(mat);
+        System.out.println(ans[0] + " " + ans[1]);
     }
 }
